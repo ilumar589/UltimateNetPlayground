@@ -1,4 +1,3 @@
-using MudBlazor.Services;
 using UI.Components;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,8 +7,6 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
 
-// Add MudBlazor services
-builder.Services.AddMudServices();
 
 
 var app = builder.Build();
